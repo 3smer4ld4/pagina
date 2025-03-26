@@ -1,0 +1,246 @@
+
+body {
+    
+  font-family: "Poppins", "Poppins Extrabolt800";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(180deg, 
+  #8ecae6, 
+  #219ebc,
+  #023047,
+  #ffb703,
+  #fb8500);
+
+  padding-bottom: 50px; /* Agregado para asegurar que no se superpongan los elementos */
+  cursor: url("cursor.png"), auto;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 0px 15px 15px;
+  border-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+
+  background: black;
+}
+
+ul.topnav li {
+  position: relative;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 24px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #b9e7eb;
+}
+
+ul.topnav li a.active {
+  background-color: #000000;
+}
+
+/* Mejorar el espaciado entre las secciones */
+main {
+  width: 90%;
+  margin: 20px 0;
+}
+
+
+.Cabecera {
+  font-size: 20px;
+  border-radius: 8px;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  background: white;
+  box-shadow: 0 0 20px #304ba5;
+}
+
+.botsito{
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.ChatBot h1{
+  text-align: center;
+}
+
+.Objetivos {
+  font-size: 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  background: black;
+  box-shadow: 0 0 20px #022536;
+}
+.ObPrin p, .ObEs p {
+  color: white !important;
+}
+
+
+.Integrantes {
+  font-size: 20px;
+
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  background: white;
+  box-shadow: 0 0 20px #d19705;
+}
+
+.Integrantes.hover{
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+
+
+.Herramientas {
+
+  text-align: center;
+  border-radius: 8px;
+
+  background: black;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+
+
+.card {
+  width: 250px;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  margin: 15px auto;
+  text-align: center;
+}
+.img{
+
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.card .contenido-card {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido-card h3 {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.card .contenido-card p {
+  color: #000000;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.Objetivos p{
+  color: #000000;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Estilos para el footer */
+
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  background: white;
+  box-shadow: 0 0 20px #da3012;
+
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-email {
+  color: #1c2d3d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-email:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
